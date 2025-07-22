@@ -1,25 +1,38 @@
 /* CSS Variables for Theme Management */
 :root {
-  /* Light theme colors */
+  /* Light theme and default brand colors */
+  --primary: #f08f8f;
+  --secondary: #FFF176;
+  --accent: #81C784;
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
   --text-primary: #282c34;
   --text-secondary: #61dafb;
   --border-color: #e9ecef;
-  --button-bg: #007bff;
+  --button-bg: var(--primary);
   --button-text: #ffffff;
+  --nav-bg: #222;
+  --nav-active: var(--secondary);
+  --card-bg: #fff;
 }
 
 [data-theme="dark"] {
   /* Dark theme colors */
-  --bg-primary: #1a1a1a;
-  --bg-secondary: #282c34;
-  --text-primary: #ffffff;
-  --text-secondary: #61dafb;
-  --border-color: #404040;
-  --button-bg: #0056b3;
-  --button-text: #ffffff;
+  --primary: #f08f8f;
+  --secondary: #FFF176;
+  --accent: #81C784;
+  --bg-primary: #171818;
+  --bg-secondary: #232325;
+  --text-primary: #f8f8f8;
+  --text-secondary: #FFF176;
+  --border-color: #30313f;
+  --button-bg: #81C784;
+  --button-text: #171818;
+  --nav-bg: #212121;
+  --nav-active: #FFF176;
+  --card-bg: #131313;
 }
+
 
 .App {
   text-align: center;
